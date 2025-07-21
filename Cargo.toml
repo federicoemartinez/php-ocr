@@ -1,0 +1,16 @@
+[package]
+name = "php-ocr"
+version = "0.1.0"
+description = "PHP extension for OCR using ocrs"
+edition = "2024"
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ext-php-rs = "0.14.2"
+ocrs = { git = "https://github.com/robertknight/ocrs.git", rev = "4a29345" }
+image = "0.24"
+rten-tensor = "0.20.0"
+rten = "0.20.0"
