@@ -20,6 +20,7 @@ if ($argc < 2) {
 
 $image_path = $argv[1];
 
+
 // Check if the image file exists
 if (!file_exists($image_path)) {
     die("Error: The image file '$image_path' does not exist.\n");
@@ -59,7 +60,7 @@ try {
     echo "Word count: $word_count\n";
     echo "Character count: $char_count\n";
 
-} catch (Exception $e) {
+} catch (OCREngineException $e) {
     echo "Error: " . $e->getMessage() . "\n";
     exit(1);
 }
