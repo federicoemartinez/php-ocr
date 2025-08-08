@@ -23,7 +23,7 @@ Once Rust is installed, you can build the extension using cargo:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/php-ocr.git
+git clone https://github.com/federicoemartinez/php-ocr.git
 cd php-ocr
 
 # Build the extension in release mode
